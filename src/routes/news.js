@@ -3,6 +3,6 @@ const route = express.Router();
 const newsController = require('../app/controllers/NewsController');
 // searchController.index
 
-route.use('/', newsController.index);
+route.get('/', newsController.index);
 
 module.exports = route;
